@@ -28,12 +28,14 @@
 };
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <250>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
 
+/ {
     combos { compatible = "zmk,combos"; };
+};
 
     keymap {
         compatible = "zmk,keymap";
