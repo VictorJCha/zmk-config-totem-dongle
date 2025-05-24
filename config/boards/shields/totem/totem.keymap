@@ -24,7 +24,7 @@
 #define S_CUT &kp LC(X)
 #define S_COPY &kp LC(C)
 #define S_PASTE &kp LC(V)
-#define S_REDO &kp LS(Y)
+#define S_REDO &kp LC(Y)
 
 &mt {
     quick-tap-ms = <150>;
