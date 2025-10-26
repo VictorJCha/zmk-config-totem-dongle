@@ -65,10 +65,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F              &kp P         &kp B          &kp J    &kp L          &kp U          &kp Y       &kp SEMI
-         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T   &kp G          &kp M    &mt RSHFT N    &mt RCTRL E    &mt RALT I  &mt DEL O
-&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D         &mt LC(V) V    &kp K    &kp H          &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
-                                   &mt BACKSPACE DEL  &lt NAV BSPC  &kp RET        &kp TAB  &lt SYM SPACE  &mt RGUI BSPC
+         &mt Y Q      &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &kp Y       &kp SEMI
+         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I  &mt DEL O
+&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D        &mt LC(V) V    &kp K    &kp H        &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
+                                   &mt BACKSPACE DEL  &lt 1 BSPC   &kp RET        &kp TAB  &lt 2 SPACE  &mt RGUI BSPC
             >;
         };
 
@@ -94,7 +94,7 @@
                 &kp CLCK    &kp PAGE_UP  &kp UP          &kp PAGE_DOWN  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
                 &caps_word  &kp LEFT     &kp DOWN        &kp RIGHT      &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
 &studio_unlock  &kp DEL     &mkp LCLK    &mkp MCLK       &mkp RCLK      &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                         &studio_unlock  &trans         &trans      &mo ADJ   &kp KP_N0  &trans
+                                         &studio_unlock  &trans         &trans      &mo 3     &kp KP_N0  &trans
             >;
         };
 
@@ -120,7 +120,7 @@
         &kp EXCL     &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS      &kp KP_ASTERISK  &kp UNDERSCORE  &kp EQUAL
         &kp GRAVE    &trans       &trans    &trans    &trans       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &kp SQT         &kp DQT
 &trans  &kp RA(F18)  &kp RA(F19)  &trans    &trans    &trans       &trans      &trans        &kp C_PREV       &kp C_NEXT      &trans     &trans
-                                  &trans    &trans    &mo ADJ      &trans      &kp C_PP      &trans
+                                  &trans    &trans    &mo 3        &trans      &kp C_PP      &trans
             >;
         };
 
@@ -147,15 +147,6 @@
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
