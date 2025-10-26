@@ -27,7 +27,7 @@
 #define S_REDO &kp LC(Y)
 
 &mt {
-    quick-tap-ms = <150>;
+    quick-tap-ms = <175>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
