@@ -65,10 +65,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F         &kp P         &kp B          &kp J    &kp L          &kp U          &kp Y       &kp SEMI
-         &kp A        &mt LALT R   &mt LCTRL S   &mt LSHFT T   &kp G          &kp M    &mt RSHFT N    &mt RCTRL E    &mt RALT I  &mt DEL O
-&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C   &kp D         &mt LC(V) V    &kp K    &kp H          &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
-                                   &mt LGUI DEL  &lt NAV BSPC  &kp RET        &kp TAB  &lt SYM SPACE  &mt RGUI BSPC
+         &mt Y Q      &kp W        &kp F              &kp P         &kp B          &kp J    &kp L          &kp U          &kp Y       &kp SEMI
+         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T   &kp G          &kp M    &mt RSHFT N    &mt RCTRL E    &mt RALT I  &mt DEL O
+&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D         &mt LC(V) V    &kp K    &kp H          &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
+                                   &mt BACKSPACE DEL  &lt NAV BSPC  &kp RET        &kp TAB  &lt SYM SPACE  &mt RGUI BSPC
             >;
         };
 
@@ -147,6 +147,15 @@
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
