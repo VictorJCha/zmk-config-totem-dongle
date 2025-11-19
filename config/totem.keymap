@@ -91,10 +91,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp CLCK    &kp PAGE_UP  &kp UP          &kp PAGE_DOWN  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-                &caps_word  &kp LEFT     &kp DOWN        &kp RIGHT      &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&studio_unlock  &kp DEL     &mkp LCLK    &mkp MCLK       &mkp RCLK      &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                                         &studio_unlock  &trans         &trans      &mo 3     &kp KP_N0  &trans
+                &kp CLCK    &kp PAGE_UP  &kp UP          &kp PAGE_DOWN  &kp LBRC    &kp RBRC    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
+                &caps_word  &kp LEFT     &kp DOWN        &kp RIGHT      &kp LBKT    &kp RBKT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&studio_unlock  &kp DEL     &mkp LCLK    &mkp MCLK       &mkp RCLK      &kp LPAR    &kp RPAR    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
+                                         &studio_unlock  &trans         &trans      &kp PERIOD  &kp KP_N0  &mo 3
             >;
         };
 
