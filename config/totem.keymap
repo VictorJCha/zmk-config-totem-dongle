@@ -47,16 +47,16 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle_window_off {
-            bindings = <&toggle_layer_off 0>;
+        toggle_mac_on {
+            bindings = <&toggle_layer_on 1>;
             key-positions = <20 33>;
             timeout-ms = <250>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
 
-        toggle_window_on {
-            bindings = <&toggle_layer_on 0>;
+        toggle_mac_off {
+            bindings = <&toggle_layer_off 1>;
             key-positions = <20 33>;
             layers = <1>;
             timeout-ms = <250>;
