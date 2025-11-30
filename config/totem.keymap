@@ -47,27 +47,51 @@
     combos {
         compatible = "zmk,combos";
 
-        togWinLayer {
-            bindings = <&tog 0>;
-            key-positions = <20 31 33 36>;
+        toggle_window_off {
+            bindings = <&toggle_layer_off 0>;
+            key-positions = <20 33>;
             timeout-ms = <250>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
 
-        togWinLayerAgain {
-            bindings = <&tog 0>;
-            key-positions = <20 33 36 31>;
+        toggle_window_on {
+            bindings = <&toggle_layer_on 0>;
+            key-positions = <20 33>;
             layers = <1>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <250>;
         };
     };
 
     macros {
-        new_macro: new_macro {
+        email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
+            bindings = <&kp V &kp I &kp C &kp T &kp O &kp R &kp C &kp H &kp A &kp N1 &kp N9 &kp N9 &kp N6 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        workemail: workemail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp I &kp C &kp T &kp O &kp R &kp AT &kp C &kp A &kp N &kp T &kp A &kp R &kp A &kp D &kp E &kp S &kp I &kp G &kp N &kp DOT &kp C &kp O &kp M>;
+            label = "WORKEMAIL";
+        };
+    };
+
+    behaviors {
+        toggle_layer_on: toggle_layer_on {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOGGLE_LAYER_ON";
+            #binding-cells = <1>;
+        };
+
+        toggle_layer_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOGGLE_LAYER_OFF";
+            #binding-cells = <1>;
+            toggle-mode = "off";
         };
     };
 
@@ -171,10 +195,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS      &kp KP_ASTERISK  &kp UNDERSCORE  &kp EQUAL
-        &kp GRAVE    &trans       &trans    &trans    &trans       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &kp SQT         &kp DQT
-&trans  &kp RA(F18)  &kp RA(F19)  &trans    &trans    &trans       &trans      &trans        &kp C_PREV       &kp C_NEXT      &trans     &trans
-                                  &trans    &trans    &mo 4        &trans      &kp C_PP      &trans
+        &kp EXCL   &kp AT      &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS      &kp KP_ASTERISK  &kp UNDERSCORE  &kp EQUAL
+        &kp GRAVE  &trans      &trans    &trans    &trans       &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &kp SQT         &kp DQT
+&trans  &email     &workemail  &trans    &trans    &trans       &trans      &trans        &kp C_PREV       &kp C_NEXT      &trans     &trans
+                               &trans    &trans    &mo 4        &trans      &kp C_PP      &trans
             >;
         };
 
