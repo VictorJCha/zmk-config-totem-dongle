@@ -44,6 +44,33 @@
     // };
     //  };
 
+    combos {
+        compatible = "zmk,combos";
+
+        togWinLayer {
+            bindings = <&tog 0>;
+            key-positions = <20 31 33 36>;
+            timeout-ms = <250>;
+            require-prior-idle-ms = <250>;
+            layers = <0>;
+        };
+
+        togWinLayerAgain {
+            bindings = <&tog 0>;
+            key-positions = <20 33 36 31>;
+            layers = <1>;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,9 +93,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &kp Y       &kp SEMI
-         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I  &mt DEL O
-&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D        &mt LC(V) V    &kp K    &kp H        &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
+         &mt Y Q      &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &mt LC(Y) Y  &kp SEMI
+         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I   &mt DEL O
+&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D        &mt LC(V) V    &kp K    &kp H        &kp COMMA      &kp DOT      &kp FSLH   &kp BSLH
                                    &mt BACKSPACE DEL  &lt 2 BSPC   &kp RET        &kp TAB  &lt 3 SPACE  &mt RGUI BSPC
             >;
         };
@@ -92,10 +119,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &kp Y       &kp SEMI
-         &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I  &mt DEL O
-&kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D        &mt LC(V) V    &kp K    &kp H        &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
-                                   &mt BACKSPACE DEL  &lt 2 BSPC   &kp RET        &kp TAB  &lt 3 SPACE  &mt RGUI BSPC
+         &mt Y Q      &kp W        &kp F               &kp P        &kp B          &kp J    &kp L        &kp U          &mt LG(Y) Y  &kp SEMI
+         &kp A        &mt LALT R   &mt LEFT_COMMAND S  &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I   &mt DEL O
+&kp ESC  &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C         &kp D        &mt LG(V) V    &kp K    &kp H        &kp COMMA      &kp DOT      &kp FSLH   &kp BSLH
+                                   &mt BACKSPACE DEL   &lt 2 BSPC   &kp RET        &kp TAB  &lt 3 SPACE  &mt RGUI BSPC
             >;
         };
 
