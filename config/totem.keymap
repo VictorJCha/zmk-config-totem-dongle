@@ -117,7 +117,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &mt LC(Y) Y  &kp SEMI
+         &kp Q        &kp W        &kp F              &kp P        &kp B          &kp J    &kp L        &kp U          &mt LC(Y) Y  &kp SEMI
          &kp A        &mt LALT R   &mt LCTRL S        &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RCTRL E    &mt RALT I   &mt DEL O
 &kp ESC  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C        &kp D        &mt LC(V) V    &kp K    &kp H        &kp COMMA      &kp DOT      &kp FSLH   &kp BSLH
                                    &mt BACKSPACE DEL  &lt 2 BSPC   &kp RET        &kp TAB  &lt 3 SPACE  &mt RGUI BSPC
@@ -143,9 +143,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛               ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &mt Y Q      &kp W        &kp F               &kp P        &kp B          &kp J    &kp L        &kp U            &mt LG(Y) Y  &kp SEMI
-         &kp A        &mt LALT R   &mt LEFT_COMMAND S  &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt LG(RCTRL) E  &mt RALT I   &mt DEL O
-&kp ESC  &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C         &kp D        &mt LG(V) V    &kp K    &kp H        &kp COMMA        &kp DOT      &kp FSLH   &kp BSLH
+         &kp Q        &kp W        &mt LEFT_CONTROL F  &kp P        &kp B          &kp J    &kp L        &kp U                &mt LG(Y) Y  &kp SEMI
+         &kp A        &mt LALT R   &mt LEFT_COMMAND S  &mt LSHFT T  &kp G          &kp M    &mt RSHFT N  &mt RIGHT_COMMAND E  &mt RALT I   &mt DEL O
+&kp ESC  &mt LG(Z) Z  &mt LG(X) X  &mt LG(C) C         &kp D        &mt LG(V) V    &kp K    &kp H        &kp COMMA            &kp DOT      &kp FSLH   &kp BSLH
                                    &mt BACKSPACE DEL   &lt 2 BSPC   &kp RET        &kp TAB  &lt 3 SPACE  &mt RGUI BSPC
             >;
         };
