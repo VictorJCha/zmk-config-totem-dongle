@@ -34,7 +34,7 @@
     tapping-term-ms = <175>;
 };
 
-
+  / {
     combos {
         compatible = "zmk,combos";
 
