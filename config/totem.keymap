@@ -14,7 +14,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 5    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
 #define WINDOWS 0
@@ -213,7 +213,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &sys_reset   &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
         &bootloader  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                      &trans          &trans           &trans    &trans  &trans  &trans
